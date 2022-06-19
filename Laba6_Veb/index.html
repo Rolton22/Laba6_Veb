@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.js"></script>
+    <script defer src="js/index.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><span data-section="about">Our restaurant</span></li>
+            <li>
+                <div class="dropdown">
+                    <div class="menu">Menu</div>
+                    <div class="dropdown-content">
+                        <a href="#menu">About menu</a>
+                        <a href="#menu/Philadelphia">Philadelphia roll</a>
+                        <a href="#menu/Maki">Maki</a>
+                </div>
+              </div>
+            </li>
+            <li><span data-section="contacts">Contacts</span></li>
+        </ul>
+    </div>
+
+    <div class="fullpage">
+
+        <div data-index="0" data-anchor="about" class="section">
+            <div class="bg" style="background-image: url(img/sushi-bar.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Sushi bar "Ocean"</h2>
+                <p class="text">"Ocean" - is a bar Japanese establishment whose main dishes are rolls and sushi. Our menu have a lot of intresting dishes with a reach history.</p>
+            </div>
+        </div>
+
+        <div data-index="1" class="section" data-anchor="menu" id="section2">
+            
+            <div class="slide" data-anchor="main">
+                <div class="bg" style="background-image: url(img/Sushi-back.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Our menu</h2>
+                    <p class="text">Traditional Japanise cuisine is popular all over the world, thanks to such a dishes as sushi and rolls. They are very diverse and in each region is unique.</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Philadelphia">
+                <div class="bg" id="bg2" style="background-image: url(img/Philadelphia-roll.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Philadelphia roll</h2>
+                    <p class="text">The Philadelphia roll is a type of sushi usually made with smoked salmon, cream cheese, and cucumber. They may also include other ingredients such as other types of fish, avocados, green onions, and sesame seeds.</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Maki">
+                <div class="bg" id="bg3"style="background-image: url(img/Maki.jpg) "></div>
+                <div class="content">
+                    <h2 class="title">Maki</h2>
+                    <p class="text">Maki is a kind of sushi, one of the most famous Japanese dishes, which is served in the form of a roll. At the heart of this roll of rice soaked in rice vinegar, and complement it with various fillings. All this is wrapped in a dry sheet of nori algae - and you get the same rolls that are now eaten around the world.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-index="2" data-anchor="contacts" class="section">
+            <div class="bg" style="background-image: url(img/Sushi-back2.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Phone number</h2>
+                <p class="text">You can call for table reservations or order our delicious food directly to your home. We only have the best reviews.<br>+132142141972</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
